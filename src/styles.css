@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  position: relative;
+}
+
+.bg--img {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  background-color: black;
+}
