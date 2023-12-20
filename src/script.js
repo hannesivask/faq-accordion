@@ -1,18 +1,11 @@
-const icons = document.querySelectorAll(".acc--icon");
 const contents = document.querySelectorAll(".acc--content");
 
-icons.forEach((icon) =>
-  icon.addEventListener("click", function () {
-    contents.forEach(function (content) {
-      if (icon.dataset.icon === content.dataset.content) {
-        content.classList.toggle("hidden");
-
-        if (content.classList.contains("hidden")) {
-          icon.src = `assets/images/icon-plus.svg`;
-        } else {
-          icon.src = `assets/images/icon-minus.svg`;
-        }
-      }
-    });
-  })
-);
+contents.forEach(function (content) {
+  const title = content.parentElement.children[0];
+  title.addEventListener("click", function () {
+    content.classList.toggle("hidden");
+    content.classList.contains("hidden")
+      ? (this.children[1].src = `assets/images/icon-plus.svg`)
+      : (this.children[1].src = `assets/images/icon-minus.svg`);
+  });
+});

@@ -37,7 +37,6 @@ h1 {
 }
 
 .hidden {
-  opacity: 0;
   display: none;
 }
 
@@ -69,6 +68,12 @@ h1 {
   font-size: 1.6rem;
   align-items: center;
   justify-content: space-between;
+}
+
+.acc--title:hover {
+  cursor: pointer;
+  color: hsla(292, 42%, 14%, 0.775);
+  transition: all 0.3s;
 }
 
 .acc--content {
