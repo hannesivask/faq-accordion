@@ -36,6 +36,12 @@ h1 {
   margin: 2.4rem;
 }
 
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem hsla(292, 42%, 14%, 25%);
+  border-radius: 9px;
+}
+
 .hidden {
   display: none;
 }
@@ -64,6 +70,8 @@ h1 {
 }
 
 .acc--title {
+  text-decoration: none;
+  color: hsl(292, 42%, 14%);
   display: flex;
   font-size: 1.6rem;
   align-items: center;
